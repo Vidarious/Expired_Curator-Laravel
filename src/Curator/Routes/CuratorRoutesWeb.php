@@ -10,7 +10,5 @@
 |
 */
 
-Route::get('curator', function()
-{
-    echo 'Hello world.';
-});
+//Route to Controller: CuratorController:Dashboard.
+Route::get('dashboard', 'Curator\Controllers\CuratorController@Dashboard')->name('Dashboard');

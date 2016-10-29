@@ -35,5 +35,8 @@ class CuratorServiceProvider extends ServiceProvider
     {
         //Load Curator's routes.
         include __DIR__.'/../Routes/CuratorRoutesWeb.php';
+
+        //Initialize Curator's controller.
+        $this->app->make('Curator\Controllers\CuratorController');
     }
 }
