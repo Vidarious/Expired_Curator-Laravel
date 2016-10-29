@@ -26,14 +26,24 @@
     ],
     "psr-4": {
         "App\\": "app/",
-        "ila\\Curator\\": "packages/ila/curator/src"
+        "Curator\\": "packages/ila/curator/src/Curator/"
     }
 },
 ```
 
-2. Refresh the composer autoload.
+2. Refresh the composer autoload in your base Laravel app director (not from your the Curator package dir).
 
 ```
 $ composer dump-autoload
 Generating autoload files
+```
+
+3. Add Curator's service provider to your Laravel app configuration (/config/app.php).
+
+```php
+/*
+ * Package Service Providers...
+ */
+Curator\Providers\CuratorServiceProvider::class,
+//
 ```
