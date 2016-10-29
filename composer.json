@@ -1,0 +1,12 @@
+{
+    "name": "ila/curator",
+    "description": "Laravel User Management System",
+    "authors": [
+        {
+            "name": "James Druhan",
+            "email": "jdruhan.home@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
