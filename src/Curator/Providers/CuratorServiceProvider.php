@@ -33,6 +33,7 @@ class CuratorServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //Load Curator's routes.
+        include __DIR__.'/../Routes/CuratorRoutesWeb.php';
     }
 }
