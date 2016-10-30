@@ -23,7 +23,8 @@ class CuratorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //Register Curator's migrations.
+        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
     }
 
     /**

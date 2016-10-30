@@ -47,3 +47,11 @@ Generating autoload files
 Curator\Providers\CuratorServiceProvider::class,
 //
 ```
+
+4. Migrate Curator's database tables. The following command should be performed in your Laravel project root folder.
+
+> Be sure to delete Laravel's default migration files (/database/migration) as they will not be necessary. If you do not want to re-migrate any existing migration tables you've built, temporarily move your migration files from the database/migrations folder in your base Laravel project.
+
+```php
+php artisan migrate
+```
