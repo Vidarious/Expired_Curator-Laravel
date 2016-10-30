@@ -103,3 +103,9 @@ Seeded: RolePermissionSeeder
 Seeded: UserFlagTableSeeder
 Seeded: CuratorDatabaseSeeder
 ```
+
+6. Compile CSS and migrate resources to Laravel public. Run the following command in the \vendor\ila\curator\src\ directory.
+
+```php
+gulp
+```
