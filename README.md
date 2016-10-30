@@ -55,3 +55,51 @@ Curator\Providers\CuratorServiceProvider::class,
 ```php
 php artisan migrate
 ```
+
+5. Modify Laravel DatabaseSeeder to call Curator's seeds.
+
+```php
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //Call Curator's Seeds.
+        $this->call(CuratorDatabaseSeeder::class);
+    }
+}
+```
+
+Then run the following terminal command in your Laravel base folder. The required tables will be created in your database and be seeded with the appropriate default settings.
+
+```
+$ php artisan migrate --seed
+Migrated: 2016_10_19_223416_create_status_table
+Migrated: 2016_10_20_193702_create_user_table
+Migrated: 2016_10_20_203139_create_flag_table
+Migrated: 2016_10_20_204349_create_role_table
+Migrated: 2016_10_20_215801_create_permission_table
+Migrated: 2016_10_21_184917_create_setting_table
+Migrated: 2016_10_21_193232_create_activity_table
+Migrated: 2016_10_21_201637_create_userflag_table
+Migrated: 2016_10_21_203234_create_userrole_table
+Migrated: 2016_10_21_203811_create_userpermission_table
+Migrated: 2016_10_21_204409_create_rolepermission_table
+Seeded: StatusTableSeeder
+Seeded: UserTableSeeder
+Seeded: FlagTableSeeder
+Seeded: RoleTableSeeder
+Seeded: PermissionTableSeeder
+Seeded: SettingTableSeeder
+Seeded: ActivitySeeder
+Seeded: UserRoleSeeder
+Seeded: RolePermissionSeeder
+Seeded: UserFlagTableSeeder
+Seeded: CuratorDatabaseSeeder
+```
