@@ -25,8 +25,17 @@
 
     <body>
 
-        @yield('content')
+        <header>
+            @include('curator::layouts.header')
+        </header>
 
+        <main>
+            @yield('content')
+        </main>
+
+        <footer>
+            @include('curator::layouts.footer')
+        </footer>
         <!-- SCRIPTS -->
 
         <!-- JQuery -->
