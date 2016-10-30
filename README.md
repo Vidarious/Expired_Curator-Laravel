@@ -109,3 +109,9 @@ Seeded: CuratorDatabaseSeeder
 ```php
 gulp
 ```
+
+7. (Optional) If you would like to modify Curator's views use the following command in your Laravel root project folder. This will copy the Curator package views to the laravel / resources / views / vendor directory.
+
+```php
+php artisan vendor:publish
+```

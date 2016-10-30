@@ -23,8 +23,16 @@ class CuratorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        //Register option for user view publishing with vendor:publish.
+        $this->publishes([
+            __DIR__.'/../Resources/Views' => base_path('resources/views/vendor/curator'),
+        ]);
+
         //Register Curator's migrations.
         $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
+
+        //Register Curator's views.
+        $this->loadViewsFrom(__DIR__.'/../Resources/Views', 'curator');
     }
 
     /**

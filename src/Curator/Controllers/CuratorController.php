@@ -18,6 +18,6 @@ class CuratorController extends Controller
     //Curator administrator dashboard.
     public function Dashboard()
     {
-        echo 'Hello World.';
+        return view('curator::pages.dashboard');
     }
 }
