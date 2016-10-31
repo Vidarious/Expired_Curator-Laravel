@@ -1,1 +1,53 @@
-/* YOUR CUSTOM STYLES */
+/* Custom Brand */
+.navbar-brand
+{
+    font-size: 1.2rem !important;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 20px !important;
+    margin-top: -2px !important;
+}
+
+.brand-text
+{
+    color: #DD2C00;
+}
+
+.brand-square
+{
+    color: #BF360C;
+}
+
+/* Custom Nav Links */
+.nav-text
+{
+    font-size: 0.8rem !important;
+}
+
+.navbar
+{
+    padding-top: 7px !important;
+    padding-bottom: 3px !important;
+}
+
+/* Custom User Icon */
+.nav-user
+{
+    font-size: 1.2rem !important;
+    line-height: 0px !important;
+}
+
+/* Custom Nav User Search */
+.nav-search
+{
+  width: 175px !important;
+  margin-right: 0.8rem !important;
+  height: 0.8rem !important;
+}
+
+/* Custom Footer */
+.page-footer
+{
+    padding-top: 0px !important;
+    font-size: 0.8rem !important;
+}

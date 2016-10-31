@@ -10,7 +10,7 @@
         <title>Curator - @yield('title')</title>
 
         <!-- Font Awesome -->
-        <link href="css/vendor/curator/font-awesome.min.css" rel="stylesheet">
+        <link href="css/vendor/curator/font-awesome.css" rel="stylesheet">
 
         <!-- Bootstrap core CSS -->
         <link href="css/vendor/curator/bootstrap.min.css" rel="stylesheet">
@@ -25,17 +25,14 @@
 
     <body>
 
-        <header>
-            @include('curator::layouts.header')
-        </header>
+        @include('curator::layouts.header')
 
         <main>
             @yield('content')
         </main>
 
-        <footer>
-            @include('curator::layouts.footer')
-        </footer>
+        @include('curator::layouts.footer')
+
         <!-- SCRIPTS -->
 
         <!-- JQuery -->
