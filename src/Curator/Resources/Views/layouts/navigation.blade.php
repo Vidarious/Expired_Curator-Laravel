@@ -36,6 +36,9 @@
         <li class="nav-item">
             <a class="nav-link" href="#">Setting</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link nav-bar-home" href="#"><i class="fa fa-home"></i></a>
+        </li>
         <li class="nav-item dropdown float-xs-right navbar-profile">
             <a class="nav-link dropdown-toggle" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-o"></i></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="responsiveNavbarDropdown">
